@@ -1,0 +1,218 @@
+.body{
+    display: flex;
+    flex-wrap:wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.carrossel .botao-direito,
+.carrossel .botao-esquerdo{
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    cursor:pointer;
+}
+
+.carrossel .botao-direito:hover,
+.carrossel .botao-esquerdo:hover{
+    opacity: 1;
+}
+
+
+.carrossel .botao-esquerdo{
+    position: absolute;
+    left: -50px;
+}
+
+.carrossel .botao-direito{
+    position: absolute;
+    right: -50px;
+}
+
+.carrossel{
+  height: 270px;
+  width: 80%;
+  position: relative;
+}
+
+.carrossel-box {
+    height: 270px;
+    width: auto;
+
+    overflow:hidden;
+    display: inline-block;
+    white-space:nowrap;
+    text-align: center;
+    display:-webkit-inline-box;
+    align-items: center;
+  
+  }
+
+  .carrossel-box img {
+    width: 255px;
+    height: 260px;
+    background-size: cover;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+  
+    /* margin: 15px; */
+  }
+
+  .carrossel-box img:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  /*ROSE*/
+  .carrossel-box .imagem-carrosel-rose{
+    background-image: url(img/rose.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    width: 260px;
+
+
+    
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+    
+}
+
+.carrossel-box .imagem-carrosel-rose:first-child {
+  margin: 5px 7px;
+
+}
+
+  .carrossel-box .imagem-carrosel-rose:hover{
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  .carrossel-box .imagem-carrosel-rose:hover .produto-plus{
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+/*YELLOW*/
+
+  .carrossel-box .imagem-carrosel-yellow{
+    background-image: url(img/yellow.png);
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 260px;
+    background-size: cover;
+
+    
+
+    margin: 5px 10px;
+    
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+  .carrossel-box .imagem-carrosel-yellow:hover{
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  .carrossel-box .imagem-carrosel-yellow:hover .produto-plus{
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+/*BLUE*/
+
+.carrossel-box .imagem-carrosel-blue{
+    background-image: url(img/blue.png);
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 260px;
+    background-size: cover;
+
+
+
+    margin: 5px 10px;
+    
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.carrossel-box .imagem-carrosel-blue:hover{
+    transform: scale(1.2);
+    z-index: 5;
+  }
+
+  .carrossel-box .imagem-carrosel-blue:hover .produto-plus{
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+  /*GREEN*/
+
+  .carrossel-box .imagem-carrosel-green{
+    background-image: url(img/Green.png);
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 260px;
+    background-size: cover;
+
+    
+
+    margin: 5px 10px;
+    
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.carrossel-box .imagem-carrosel-green:hover{
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  .carrossel-box .imagem-carrosel-green:hover .produto-plus{
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+
+
+.produto-plus{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+    top: 210px;
+    position:relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.produto-plus .col-12:first-child{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.produto-plus p a{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+

@@ -1,0 +1,430 @@
+/*GERAL*/
+
+@font-face {
+	font-family: Dassie-DEMO;
+	src: url(font/Dassie\ DEMO.ttf);    
+}
+
+@font-face {
+    font-family: MADE-Soul-Maze;
+	src: url(font/MADE\ Soulmaze\ PERSONAL\ USE.otf);
+}
+
+@font-face{
+    font-family: MADE-Soul-Maze-Outline;
+	src: url(font/MADE\ Soulmaze\ Outline\ PERSONAL\ USE.otf);
+}
+
+@font-face{
+    font-family: Calibre;
+	src: url(font/calibril.ttf);
+}
+
+
+
+.color-text{
+    color:#5f3232;
+}
+
+.img-anuncio{
+    width: 100%;
+    height: auto;
+}
+
+
+/*MENU*/
+
+.linha-vertical {
+    margin-top: 10px;
+    height: 20px;/*Altura da linha*/
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: white;
+  }
+
+
+.items{
+    margin-right: 100px;
+}
+
+#img-back{
+    width: 100%;
+    height: auto;
+}
+
+.fadeout{
+    background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.7)100%,
+    rgba(0,0,0,0)100% 
+    );
+    
+    width: 100%;
+    z-index: 10;
+}
+
+
+.menu{
+    font-family: Dassie-DEMO;
+    font-weight:bold;
+    margin-left: 35px;
+    font-size: 3.3vw;
+    color: white;
+    padding-top: 0;
+}
+
+.menu-fonte{
+    font-family: Calibre;
+    font-weight:600;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sub-menu{
+    font-family: Calibre;
+    font-weight:400;
+    font-size: 17px;
+}
+
+
+
+/*RODAPÉ*/
+
+.footer-text{
+    font-family: MADE-Soul-Maze;
+    font-weight: 900;
+    margin: 0;
+}
+
+.margem-footer{
+    padding-top: 70px;
+    padding-bottom: 250px;
+}
+
+.rodape{
+    font-family: Calibre;
+    font-weight:400;
+    font-size: 22px;
+}
+
+/*MAIN-CONTENT*/
+   
+    /*ANUNCIO 1*/
+    .img-anuncio-1{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .img-ticket{
+        position: relative;
+        display: flex;
+        width: 30%;
+        height: auto;
+        left: 38vw;
+        top: -45vw;
+        z-index: 5;
+    }
+
+    .texto-anuncio-1-Principal{
+        font-family: Dassie-DEMO;
+        font-weight: 900;
+        position: relative;
+        font-size: 5vh;
+        top: 100px;
+    }
+
+    .texto-anuncio-1-Base{
+        font-family: MADE-Soul-Maze;
+        font-weight: bold;
+        font-size: clamp(1em, 4.5em + 1vw, 4.5em);
+        z-index: 3;
+        margin-top: 70px;
+    }
+    
+    .texto-anuncio-1-Outline{
+        position: relative;
+        font-family: MADE-Soul-Maze-Outline;
+        font-weight: bold;
+        font-size: 22.5vh;
+        z-index: 1;
+    }
+
+    #outline-1{
+        top: -150px;
+    }
+    
+    #outline-2{
+        top: -510px;
+    }
+
+
+    /*PRIMEIRO CARROSSEL COMENTADO*/
+    /*
+    .produto-lista{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 50px;
+        list-style:none;
+        white-space: nowrap;
+        display: block;
+        border: 1px solid transparent;
+    }
+
+    .produto-lista::-webkit-scrollbar{
+        display: none;
+    }
+
+    .produto{
+        display: inline-block;
+        width: 250px;
+        margin-right: 25px;
+        border-radius: 3px;
+        overflow:hidden;
+        transition: 0.5s;
+        overflow: auto;
+        border: 1px solid transparent;
+    }
+
+    .produto:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        z-index: 99;
+        transform: 0.5s;
+    }
+
+    .produto:hover .produto-info{
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .produto:first-child{
+        margin-left: 50px;
+    }
+
+    .produto-info{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        max-height:100px; 
+        transform: scale(0);
+    }
+
+    .produto-info .col-12{
+        margin-top: 5px;
+    }
+
+    .produto-info .col-12:first-child{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .produto-info p{
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .imagem-carrosel{
+        height: 250px;
+        margin: 15px;
+    }
+    */
+
+
+    
+/*TESTE CARROSSEL 1*/
+
+.produto-lista-teste{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 50px;
+    list-style:none;
+    white-space: nowrap;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.produto-lista-teste::-webkit-scrollbar{
+    display: none;
+}
+
+.produto-teste{
+    display:inline-block;
+    margin-right: 25px;
+    border-radius: 3px;
+    overflow:hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+}
+
+
+.produto-teste:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    z-index: 99;
+    transform: 0.5s;
+}
+
+.produto-teste:hover .produto-mais{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.produto-teste:first-child{
+    margin-left: 50px;
+}
+
+.produto-mais{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+    top: 200px;
+    position:relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.produto-info{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    max-height:100px; 
+    transform: scale(0);
+}
+.produto-mais .col-12:first-child{
+    margin-bottom: 20px;
+    padding: 0;
+}
+.produto-mais p{
+    color: #fff;
+    font-size: 18px;
+}
+
+/*CARROSSEL COM SETA*/
+
+.imagem-carrosel-rose{
+    background-image: url(img/rose.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    height:260px;
+    width: 260px;
+}
+
+.imagem-carrosel-green{
+    background-image: url(img/Green.png);
+    background-repeat: no-repeat; 
+    height:260px; 
+    width: 260px;
+}
+
+.imagem-carrosel-yellow{
+    background-image: url(img/yellow.png);
+    background-repeat: no-repeat; 
+    height:260px;
+    width: 260px;
+   
+}
+
+.imagem-carrosel-blue{
+    background-image: url(img/blue.png);
+    background-repeat: no-repeat; 
+    height:260px; 
+    width: 260px;
+  
+}
+
+.produto-lista-teste2{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 50px;
+    list-style:none;
+    white-space: nowrap;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.produto-lista-teste2::-webkit-scrollbar{
+    display: none;
+}
+
+.produto-teste2{
+    display:inline-block;
+    margin-right: 25px;
+    border-radius: 3px;
+    overflow:hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+}
+
+.produto-teste2:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    z-index: 99;
+    transform: 0.5s;
+}
+
+.produto-teste2:hover .produto-mais2{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.produto-teste2:first-child{
+    margin-left: 65px;
+}
+
+.produto-mais2{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+    top: 200px;
+    position:relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.produto-mais2 .col-12:first-child{
+    margin-bottom: 20px;
+    padding: 0;
+}
+.produto-mais2 p a{
+    color: #fff;
+    font-size: 18px;
+}
+
+/*BOTÃO CARROSSEL*/
+.carousel-control-next{
+    top:75px;
+    height: 100px;
+    width: 80px;
+}
+
+.carousel-control-prev{
+    top:75px;
+    width: 80px;
+    height: 100px;
+}
+
+/*CARROSEL 2 (GRANDE)*/
+.imagem-carrosel-casal{
+    background-image: url(img/Casal\ 1.png);
+    
+    background-repeat: no-repeat; 
+    height:460px;
+    width: 447px;   
+}
+
+/*CARROSSEL 3*/
+.imagem-carrosel-casaco{
+    background-image: url(img/Loirinha\ safadinha.png);
+    background-repeat: no-repeat;
+    width: 297px;
+    height:283px;   
+}
+
+
+
