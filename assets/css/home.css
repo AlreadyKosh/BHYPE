@@ -20,7 +20,13 @@
 	src: url(font/calibril.ttf);
 }
 
-
+p a{
+    font-family: MADE-Soul-Maze-Outline;
+    text-decoration: none;
+}
+.fonte-made{
+    font-family: MADE-Soul-Maze;
+}
 
 .color-text{
     color:#5f3232;
@@ -29,6 +35,11 @@
 .img-anuncio{
     width: 100%;
     height: auto;
+}
+
+#img-back{
+    width: 100%;
+    height: min(830px,100vw);
 }
 
 
@@ -46,11 +57,6 @@
     margin-right: 100px;
 }
 
-#img-back{
-    width: 100%;
-    height: auto;
-}
-
 .fadeout{
     background: linear-gradient(
     180deg,
@@ -62,12 +68,11 @@
     z-index: 10;
 }
 
-
 .menu{
     font-family: Dassie-DEMO;
     font-weight:bold;
     margin-left: 35px;
-    font-size: 3.3vw;
+    font-size: min(37px, 7vw);
     color: white;
     padding-top: 0;
 }
@@ -85,8 +90,6 @@
     font-weight:400;
     font-size: 17px;
 }
-
-
 
 /*RODAPÉ*/
 
@@ -110,10 +113,18 @@
 /*MAIN-CONTENT*/
    
     /*ANUNCIO 1*/
+    .img-anuncio-1-back{
+        background-image: url(img/Waves-lines.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 500px;
+        width: 500px;
+    }
+
     .img-anuncio-1{
         width: 100%;
-        height: auto;
-
+        height: min(600px,45vw);
     }
 
     .img-ticket{
@@ -121,8 +132,8 @@
         display: flex;
         width: 30%;
         height: auto;
-        left: 38vw;
-        top: -45vw;
+        left: 36vw;
+        top: -42vw;
         z-index: 5;
     }
 
@@ -130,34 +141,83 @@
         font-family: Dassie-DEMO;
         font-weight: 900;
         position: relative;
-        font-size: 5vh;
-        top: 100px;
+        font-size: max(15px ,3vw);
+        top: min(100px, 7vw);
     }
 
     .texto-anuncio-1-Base{
         font-family: MADE-Soul-Maze;
-        font-weight: bold;
-        font-size: clamp(1em, 4.5em + 1vw, 4.5em);
+        font-weight: 500;
+        font-size: max(50px,12vw);
         z-index: 3;
-        margin-top: 70px;
+        margin-top: min(70px, 5.5vw);
+
     }
     
     .texto-anuncio-1-Outline{
         position: relative;
         font-family: MADE-Soul-Maze-Outline;
-        font-weight: bold;
-        font-size: 22.5vh;
+        font-weight: 500;
+        font-size: max(50px,12vw);
         z-index: 1;
+
     }
 
     #outline-1{
-        top: -150px;
+        top: min(-55px,-10.5vw);
     }
     
     #outline-2{
-        top: -510px;
+        top: min(-172px,-36vw);
     }
 
+    /*ANUNCIO 2*/
+
+    .img-anuncio-2-back{
+        background-image: url(img/Planet-lines.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 500px;
+        width: 500px;
+    }
+
+    .img-anuncio-2{
+        width: 100%;
+        height: min(670px,70vw);
+    }
+
+    .texto-anuncio-2-principal{
+        font-family: MADE-Soul-Maze-Outline;
+        font-weight: 900;
+        position: relative;
+        font-size: max(21px,4vw);
+        top: min(160px,17vw);
+        color: #e5a633;
+        margin-bottom: 0px;
+    }
+
+    .texto-anuncio-2-secundario{
+        font-family: MADE-Soul-Maze;
+        font-weight: 900;
+        position: relative;
+        font-size: max(17px ,3.4vw);
+        top: min(160px,17vw);
+        color: #e5a633;
+        margin-bottom: 0px;
+    }
+
+    .texto-anuncio-2-complemento{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 500;
+        position: relative;
+        font-size: max(19px ,3.7vw);
+        top: min(160px,17vw);
+        color: #e5a633;
+        margin-bottom: 0px;
+    }
+
+    
 
     /*PRIMEIRO CARROSSEL COMENTADO*/
     /*
@@ -233,7 +293,7 @@
 
 
     
-/*TESTE CARROSSEL 1*/
+    /*TESTE CARROSSEL 1
 
 .produto-lista-teste{
     overflow-x: scroll;
@@ -294,14 +354,16 @@
     max-height:100px; 
     transform: scale(0);
 }
+
 .produto-mais .col-12:first-child{
     margin-bottom: 20px;
     padding: 0;
 }
+
 .produto-mais p{
     color: #fff;
     font-size: 18px;
-}
+}*/
 
 /*CARROSSEL COM SETA*/
 
@@ -337,6 +399,7 @@
   
 }
 
+/*CARROSSEL 2*/
 .produto-lista-teste2{
     overflow-x: scroll;
     overflow-y: hidden;
@@ -391,10 +454,75 @@
     margin-bottom: 20px;
     padding: 0;
 }
+
 .produto-mais2 p a{
     color: #fff;
     font-size: 18px;
 }
+
+
+/*CARROSSEL 4*/
+
+.produto-lista-teste3{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 150px;
+    list-style:none;
+    white-space: nowrap;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.produto-lista-teste3::-webkit-scrollbar{
+    display: none;
+}
+
+.produto-teste3{
+    display:inline-block;
+    margin-right: 25px;
+    border-radius: 3px;
+    overflow:hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+}
+
+.produto-teste3:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    z-index: 99;
+    transform: 0.5s;
+}
+
+.produto-teste3:hover .produto-mais3{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.produto-teste3:first-child{
+    margin-left: 65px;
+}
+
+.produto-mais3{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+    top: 220px;
+    position:relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.produto-mais3 .col-12:first-child{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.produto-mais3 p a{
+    color: #fff;
+    font-size: 18px;
+}
+
 
 /*BOTÃO CARROSSEL*/
 .carousel-control-next{

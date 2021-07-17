@@ -1,5 +1,5 @@
 .produto-carrosel-lista{
-    padding-left: 50px;
+    padding-left: 150px;
     border: 1px solid transparent;
 
     display:flex;
@@ -47,9 +47,10 @@
     margin-left: 65px;
 }
 
+
 .produto-carrosel-mais{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-    top: 380px;
+    top: 390px;
     position:relative;
     padding-top: 5px;
     padding-bottom: 3px;
