@@ -155,7 +155,7 @@
 }
 
 .carrossel-box .imagem-carrosel-blue:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 5;
   }
 

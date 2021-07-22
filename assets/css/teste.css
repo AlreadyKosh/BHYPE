@@ -1,3 +1,6 @@
+/*TESTE CARROSSEL*/
+
+/*
 * {
     margin: 0;
     padding: 0;
@@ -78,10 +81,48 @@ body{
     transition: 0.5s ease;
     z-index: 2;
   
-    /* margin: 15px; */
   }
 
   .carrossel-box img:hover {
     transform: scale(1.4);
     z-index: 5;
+  }
+   */
+
+
+  /*TESTE FADEOUT*/
+
+  .back{
+
+    background-image: url(img/bhypea.jpg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 100%;
+        height: 703px;
+  }
+
+  .fadeout{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) , rgba(0,0,0,0) );
+    height: 100px;
+  }
+
+  /* The animation code */
+@keyframes example {
+    from {transform: translate(0px, 0px);}
+    to {transform: translate(100px, 50px);}
+  }
+  
+  /* The element to apply the animation to */
+  .teste {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+  }
+
+  .teste:hover {
+    transform: scale(1.2);
+    animation-name: example;
+    animation-duration: 4s;
   }

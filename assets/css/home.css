@@ -37,11 +37,6 @@ p a{
     height: auto;
 }
 
-#img-back{
-    width: 100%;
-    height: min(830px,100vw);
-}
-
 
 /*MENU*/
 
@@ -57,16 +52,7 @@ p a{
     margin-right: 100px;
 }
 
-.fadeout{
-    background: linear-gradient(
-    180deg,
-    rgba(0,0,0,0.7)100%,
-    rgba(0,0,0,0)100% 
-    );
-    
-    width: 100%;
-    z-index: 10;
-}
+
 
 .menu{
     font-family: Dassie-DEMO;
@@ -111,15 +97,32 @@ p a{
 }
 
 /*MAIN-CONTENT*/
-   
+    /*FOTO PRINCIPAL*/
+    #img-back{
+        background-image: url(img/bhypea.jpg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: min(700px,100vw);
+        margin-top: 70px;
+        padding: 0px;
+    }
+
+    .fadeout{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) , rgba(0,0,0,0) );
+        width: 100%;
+        height: 100px;
+    }
+
+
     /*ANUNCIO 1*/
     .img-anuncio-1-back{
-        background-image: url(img/Waves-lines.png);
+        background-image: url(img/3d-lines.png);
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: 500px;
-        width: 500px;
+        height: 100%;
+        width: 90%;
     }
 
     .img-anuncio-1{
@@ -174,12 +177,12 @@ p a{
     /*ANUNCIO 2*/
 
     .img-anuncio-2-back{
-        background-image: url(img/Planet-lines.png);
+        background-image: url(img/waves-3d.png);
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: 500px;
-        width: 500px;
+        height: 100%;
+        width: 100%;
     }
 
     .img-anuncio-2{
