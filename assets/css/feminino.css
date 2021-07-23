@@ -1,107 +1,131 @@
-@font-face {
-	font-family: Dassie-DEMO;
-	src: url(font/Dassie\ DEMO.ttf);    
-}
-
-@font-face {
-    font-family: MADE-Soul-Maze;
-	src: url(font/MADE\ Soulmaze\ PERSONAL\ USE.otf);
-}
-
-@font-face{
-    font-family: MADE-Soul-Maze-Outline;
-	src: url(font/MADE\ Soulmaze\ Outline\ PERSONAL\ USE.otf);
-}
-
-@font-face{
-    font-family: Calibre;
-	src: url(font/calibril.ttf);
-}
-
-p a{
-    font-family: MADE-Soul-Maze-Outline;
-    text-decoration: none;
-}
-.fonte-made{
-    font-family: MADE-Soul-Maze;
-}
-
-.color-text{
-    color:#5f3232;
-}
-
-.linha-vertical {
-    margin-top: 10px;
-    height: 20px;/*Altura da linha*/
-    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-    color: white;
+/*GERAL*/
+  @font-face {
+    font-family: Dassie-DEMO;
+    src: url(font/Dassie\ DEMO.ttf);    
   }
 
-.items{
+  @font-face {
+      font-family: MADE-Soul-Maze;
+    src: url(font/MADE\ Soulmaze\ PERSONAL\ USE.otf);
+  }
+
+  @font-face{
+      font-family: MADE-Soul-Maze-Outline;
+    src: url(font/MADE\ Soulmaze\ Outline\ PERSONAL\ USE.otf);
+  }
+
+  @font-face{
+      font-family: Calibre;
+    src: url(font/calibril.ttf);
+  }
+
+  p a{
+      font-family: MADE-Soul-Maze-Outline;
+      text-decoration: none;
+  }
+
+  .fonte-made{
+      font-family: MADE-Soul-Maze;
+  }
+
+  .color-text{
+      color:#5f3232;
+  }
+
+/*NAVBAR*/
+  .linha-vertical {
+      margin-top: 10px;
+      height: 20px;/*Altura da linha*/
+      border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+      color: white;
+  }
+
+  .items{
     margin-right: 100px;
-}
+  }
 
-.menu{
-    font-family: Dassie-DEMO;
-    font-weight:bold;
-    margin-left: 35px;
-    font-size: min(37px, 7vw);
-    color: white;
-    padding-top: 0;
-}
+  .menu{
+      font-family: Dassie-DEMO;
+      font-weight:bold;
+      margin-left: 35px;
+      font-size: min(37px, 7vw);
+      color: white;
+      padding-top: 0;
+  }
 
-.menu-fonte{
-    font-family: Calibre;
-    font-weight:600;
-    font-size: 17px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
+  .menu-fonte{
+      font-family: Calibre;
+      font-weight:600;
+      font-size: 17px;
+      margin-left: 15px;
+      margin-right: 15px;
+  }
 
-.sub-menu{
-    font-family: Calibre;
-    font-weight:400;
-    font-size: 17px;
-}
+  .sub-menu{
+      font-family: Calibre;
+      font-weight:400;
+      font-size: 17px;
+  }
 
 /*RODAPÉ*/
 
-.footer-text{
-    font-family: MADE-Soul-Maze;
-    font-weight: 900;
-    margin: 0;
-}
-
-.margem-footer{
-    padding-top: 70px;
-    padding-bottom: 250px;
-}
-
-.rodape{
-    font-family: Calibre;
-    font-weight:400;
-    font-size: 22px;
-}
-
-/*TESTE*/
-
-
-/*
-* {
-    box-sizing: border-box;
+  .footer-text{
+      font-family: MADE-Soul-Maze;
+      font-weight: 900;
+      margin: 0;
   }
 
-  body {
-    overflow: scroll;
+  .margem-footer{
+      padding-top: 70px;
+      padding-bottom: 250px;
   }
 
-  nav {
+  .rodape{
+      font-family: Calibre;
+      font-weight:400;
+      font-size: 22px;
+  }
+
+/*TITULO*/
+  .feminino_geral{
+    top:50px;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
   }
-*/
+/*BOTOES*/
+.filtros{
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+.linha-vertical2 {
+  height: 700px;/*Altura da linha*/
+  border-right: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  padding-right: 0px;
+}
+
+/*SUB-MENU FEMININO*/
+
+
+  /*
+  * {
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: scroll;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  */
 
 
   nav ul {
@@ -110,14 +134,13 @@ p a{
     padding: 0;
   }
 
-
-/*
-  nav > div > div > ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-  }
-*/
+  /*
+    nav > div > div > ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+    }
+  */
 
   nav .submenu {
     display: none;
@@ -126,78 +149,80 @@ p a{
   nav > div > div > ul > li {
     position: relative;
   }
-
+  
   nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
   }
 
+  /* SUB MENU - FEMININO*/
   nav > div > div > ul > li > .submenu {
     position:absolute;
     top: 57px;
-    left: -970px;
-    width: 1430px;
+    left: -940px;
+    width: 1355px;
     height: auto;
     padding: 15px 30px;
     z-index: 2;
-    background: gray;
+    background: #a93c55;
   }
 
-  /* ANIMAÇÃO */
-  @keyframes example {
-    from {height: 0px;}
-    to {height: 190px;}
-  }
+  /* ANIMAÇÃO SUB-MENU*/
+    @keyframes fundo {
+      from {height: 0px;}
+      to {height: 190px;}
+    }
 
-  @keyframes teste {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-  }
+    @keyframes texto_principal {
+      from {transform: scale(0);}
+      to {transform: scale(1);}
+    }
 
-  @keyframes teste1 {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-  }
-  
-  nav > div > div > ul > li:hover > .submenu{
-    animation-name: example;
-    animation-duration: 0.5s;
-    display:flex;
-  }
-
-  nav > div > div > ul > li:hover strong {
-    animation-name: teste;
-    animation-duration: 0.5s;
-  }
-
-  nav > div > div > ul > li:hover  a{
-    animation-name: teste1;
-    animation-duration: 0.5s;
-  }
-
-  nav > div > div > ul > li > .submenu > .col {
-    min-width: 200px;
-  }
-
-  nav > div > div > ul > li > .submenu > .col strong {
-    font-weight: 700;
-    color: black;
-    margin: 15px 0 20px 0;
-    display: block;
-  }
-
-  nav > div > div > ul > li > .submenu > .col a {
-    color: #dfdfdf;
-    display: block;
-    margin: 10px 0;
-    font-weight: 400;
-  }
-
-  nav > div > div > ul > li > .submenu > .col a:hover {
-    color: #fff;
+    @keyframes texto_secundario {
+      from {transform: scale(0);}
+      to {transform: scale(1);}
+    }
     
-  }
+  /*PASSAR MOUSE SUB-MENU*/
+    nav > div > div > ul > li:hover > .submenu{
+      animation-name: fundo;
+      animation-duration: 0.5s;
+      display:flex;
+    }
+
+    nav > div > div > ul > li:hover strong {
+      animation-name: texto_principal;
+      animation-duration: 0.5s;
+    }
+
+    nav > div > div > ul > li:hover  a{
+      animation-name: texto_secundario;
+      animation-duration: 0.5s;
+    }
+  
+  /*MODIFICAÇÃO DAS COLUNAS */
+    nav > div > div > ul > li > .submenu > .col {
+      min-width: 200px;
+    }
+
+    nav > div > div > ul > li > .submenu > .col strong {
+      font-weight: 700;
+      color: black;
+      margin: 15px 0 20px 0;
+      display: block;
+    }
+
+    nav > div > div > ul > li > .submenu > .col a {
+      color: #dfdfdf;
+      display: block;
+      margin: 10px 0;
+      font-weight: 400;
+    }
+
+    nav > div > div > ul > li > .submenu > .col a:hover {
+      color: #fff;
+    }
 
  /*
  
