@@ -28,6 +28,11 @@
       font-family: MADE-Soul-Maze;
   }
 
+  .calibre{
+    font-family: Calibre;
+ 
+  }
+
   .color-text{
       color:#5f3232;
   }
@@ -103,9 +108,61 @@
 
 .linha-vertical2 {
   height: 700px;/*Altura da linha*/
-  border-right: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  border-right: 2px solid #5f3232;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
   padding-right: 0px;
 }
+
+.select{
+  width: 20%;
+  height: 40px;
+}
+
+/*LISTA DOS PRODUTOS*/
+#lista{
+  position: relative;
+  display: flex;
+}
+
+.produtos{
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+}
+
+.produto{
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 260px;
+  height: 400px;
+}
+
+.produto img{
+  width: 260px;
+  height: 260px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.produto > .infos > .dados > h4{
+  display: flex;
+  justify-content: center;
+}
+
+.produto > .infos > .dados > span{
+  display: flex;
+  justify-content: center;
+}
+
+.botao{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /*SUB-MENU FEMININO*/
 
@@ -156,11 +213,21 @@
     font-weight: 500;
   }
 
+  nav .icone{
+    display: none; 
+    position: absolute;
+    right: 50px;
+  }
+
+  nav > div > div > ul > li:hover > a > .icone{
+    display:flex;
+  }
+
   /* SUB MENU - FEMININO*/
   nav > div > div > ul > li > .submenu {
     position:absolute;
     top: 57px;
-    left: -940px;
+    left: -933px;
     width: 1355px;
     height: auto;
     padding: 15px 30px;
@@ -196,7 +263,7 @@
       animation-duration: 0.5s;
     }
 
-    nav > div > div > ul > li:hover  a{
+    nav > div > div > ul > li:hover > div > div > ul > li > a{
       animation-name: texto_secundario;
       animation-duration: 0.5s;
     }
