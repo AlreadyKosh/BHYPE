@@ -126,3 +126,170 @@ body{
     animation-name: example;
     animation-duration: 4s;
   }
+
+  .filtros{
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    margin-right: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .linha-vertical2 {
+    height: auto;
+    border-left: 1px solid #d1cece;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  }
+  
+  .linha-horizontal-filtros{
+    height: auto;
+    border-bottom: 1px solid #8f8989;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  }
+  
+  .select{
+    width: 20%;
+    height: 40px;
+  }
+
+   /* CSS - FILTRO TAMANHO*/
+  .tamanho{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .tamanhos{
+    display: block;
+  }  
+
+  .menos_tamanho{
+    position: absolute;
+    display: flex;
+    right: 15px;
+    margin-top: 17px;
+    width: 10px;
+    height: 2px;
+    background:black;
+    border-radius: 6px;
+    box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+    transition: all .5s ease-in-out;
+  }
+ 
+  .menos_tamanho::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background:black;
+    border-radius: 6px;
+    box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+    transition: all .5s ease-in-out;
+  }
+  
+  .menos_tamanho::after{
+   transform:translate(4px, -4px)
+ }
+
+  .tamanho.open .menos_tamanho::after{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* CSS - FILTRO MARCAS*/
+  .marca{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .marcas{
+    display: block;
+  }  
+
+  .menos_marca{
+    position: absolute;
+    display: flex;
+    right: 15px;
+    margin-top: 17px;
+    width: 10px;
+    height: 2px;
+    background:black;
+    border-radius: 6px;
+    box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+    transition: all .5s ease-in-out;
+  }
+ 
+  .menos_marca::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background:black;
+    border-radius: 6px;
+    box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+    transition: all .5s ease-in-out;
+  }
+  
+  .menos_marca::after{
+   transform:translate(4px, -4px)
+ }
+
+  .marca.open .menos_marca::after{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+ /* CSS - FILTRO PREÇO*/
+ .precos{
+   display: block;
+ }
+ 
+ .preco{
+   position: relative;
+   display: flex;
+   cursor: pointer;
+   transition: all .5s ease-in-out;
+ }
+
+ .menos{
+   position: absolute;
+   display: flex;
+   right: 15px;
+   margin-top: 17px;
+   width: 10px;
+   height: 2px;
+   background:black;
+   border-radius: 6px;
+   box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+   transition: all .5s ease-in-out;
+ }
+
+ .menos::after{
+   content: '';
+   position: absolute;
+   width: 2px;
+   height: 10px;
+   background:black;
+   border-radius: 6px;
+   box-shadow: 0 2px  5px rgba(0, 0, 0, 0.6);
+   transition: all .5s ease-in-out;
+ }
+ 
+ .menos::after{
+  transform:translate(4px, -4px)
+
+}
+
+ .preco.open .menos::after{
+   transform: translateX(-50px);
+   background: transparent;
+   box-shadow: none;
+ }
+
+
+
+
+ 
