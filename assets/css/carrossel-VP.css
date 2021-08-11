@@ -43,12 +43,13 @@
   height: 270px;
   width: 80%;
   position: relative;
+ 
 }
 
 .carrossel-box {
     height: 270px;
     width: auto;
-
+    
     overflow:hidden;
     display: inline-block;
     white-space:nowrap;
@@ -84,8 +85,6 @@
     height: 260px;
     width: 260px;
 
-
-    
     margin: 5px 10px;
     cursor: pointer;
     transition: 0.5s ease;
@@ -196,8 +195,8 @@
 
 .produto-plus{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-    top: 210px;
     position:relative;
+    top: 210px;
     padding-top: 5px;
     padding-bottom: 3px;
     width: 100%;
@@ -214,5 +213,183 @@
     font-size: 18px;
 }
 
+
+/*CARROSSEL GRANDE (2)*/
+
+.body-G{
+  display: flex;
+  flex-wrap:wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.carrossel-G .botao-direito-G,
+.carrossel-G .botao-esquerdo-G{
+  opacity: 0.5;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 450px;
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+  cursor:pointer;
+}
+
+.carrossel-G .botao-direito-G:hover,
+.carrossel-G .botao-esquerdo-G:hover{
+  opacity: 1;
+}
+
+
+.carrossel-G .botao-esquerdo-G{
+  position: absolute;
+  left: -50px;
+}
+
+.carrossel-G .botao-direito-G{
+  position: absolute;
+  right: -50px;
+}
+
+.carrossel-G{
+height: 470px;
+width: 80%;
+position: relative;
+}
+
+.carrossel-box-G {
+  height: 470px;
+  width: auto;
+  overflow:hidden;
+  display: inline-block;
+  white-space:nowrap;
+  text-align: center;
+  display:-webkit-inline-box;
+  align-items: center;
+
+}
+
+ /*IMAGEM CASAL-CASACO*/
+ .carrossel-box-G .imagem-carrosel-casaco-G{
+  background-image: url(img/Casal1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+  width: 447px;
+
+  margin: 5px 13px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  
+}
+
+
+.carrossel-box-G .imagem-carrosel-casaco-G:hover{
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.carrossel-box-G .imagem-carrosel-casaco-G:hover .produto-plus{
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+
+/*CARROSSEL PEQUENO (3)*/
+
+.body-P{
+  display: flex;
+  flex-wrap:wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carrossel-P .botao-direito-P,
+.carrossel-P .botao-esquerdo-P{
+  opacity: 0.5;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 270px;
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+  cursor:pointer;
+}
+
+.carrossel-P .botao-direito-P:hover,
+.carrossel-P .botao-esquerdo-P:hover{
+  opacity: 1;
+}
+
+
+.carrossel-P .botao-esquerdo-P{
+  position: absolute;
+  left: -50px;
+}
+
+.carrossel-P .botao-direito-P{
+  position: absolute;
+  right: -50px;
+}
+
+.carrossel-P{
+height: 293px;
+width: 80%;
+position: relative;
+
+}
+
+.carrossel-box-P{
+  height: 293px;
+  width: auto;
+  
+  overflow:hidden;
+  display: inline-block;
+  white-space:nowrap;
+  text-align: center;
+  display:-webkit-inline-box;
+  align-items: center;
+
+}
+
+ /*IMAGEM CASACO-LOIRA*/
+ .carrossel-box-P .imagem-carrosel-casaco-P{
+  background-image: url(img/Loirinha-safadinha.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 283px;
+  width: 297px;
+
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  
+}
+
+
+.carrossel-box-P .imagem-carrosel-casaco-P:hover{
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.carrossel-box-P .imagem-carrosel-casaco-P:hover .produto-plus{
+  transform: scale(1);
+  transition: 0.5s;
+}
 
 

@@ -4,13 +4,12 @@ var tamanhos = document.querySelector('.tamanhos');
 
 menosTamanho.addEventListener('click', function(){
 
-    if(tamanhos.style.display === 'none'){
-        tamanhos.style.display = 'block';
-        
+    if(tamanhos.style.display === 'block'){
+        tamanhos.style.display = 'none';
     }
     else
     {
-        tamanhos.style.display = 'none';
+        tamanhos.style.display = 'block';
     }
 });
 
@@ -37,13 +36,13 @@ var marcas = document.querySelector('.marcas');
 
 menosMarcas.addEventListener('click', function(){
 
-    if(marcas.style.display === 'none'){
-        marcas.style.display = 'block';
+    if(marcas.style.display === 'block'){
+        marcas.style.display = 'none';
         
     }
     else
     {
-        marcas.style.display = 'none';
+        marcas.style.display = 'block';
     }
 });
 
@@ -84,11 +83,11 @@ var tablePreco = document.querySelector('.precos');
 
 menosPreco.addEventListener('click', function(){
 
-    if(tablePreco.style.display === 'none'){
-        tablePreco.style.display = 'block';
+    if(tablePreco.style.display === 'block'){
+        tablePreco.style.display = 'none';
     }
     else
     {
-        tablePreco.style.display = 'none';
+        tablePreco.style.display = 'block';
     }
 });

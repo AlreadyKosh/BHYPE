@@ -1,4 +1,8 @@
 /*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
 	font-family: Dassie-DEMO;
@@ -119,8 +123,8 @@ p a{
     .img-anuncio-1-back{
         background-image: url(img/3d-lines.png);
         background-repeat: no-repeat;
-        background-size: cover;
-
+        background-size:cover;
+        
         height: 100%;
         width: 90%;
     }
@@ -154,7 +158,6 @@ p a{
         font-size: max(50px,12vw);
         z-index: 3;
         margin-top: min(70px, 5.5vw);
-
     }
     
     .texto-anuncio-1-Outline{
@@ -181,13 +184,16 @@ p a{
         background-repeat: no-repeat;
         background-size: cover;
 
+        
         height: 100%;
         width: 100%;
     }
 
     .img-anuncio-2{
-        width: 100%;
-        height: min(670px,70vw);
+        width: 90%;
+        float:right;
+        margin-right: 20px;
+        height: min(630px,50vw);
     }
 
     .texto-anuncio-2-principal{
@@ -219,343 +225,3 @@ p a{
         color: #e5a633;
         margin-bottom: 0px;
     }
-
-    
-
-    /*PRIMEIRO CARROSSEL COMENTADO*/
-    /*
-    .produto-lista{
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding: 50px;
-        list-style:none;
-        white-space: nowrap;
-        display: block;
-        border: 1px solid transparent;
-    }
-
-    .produto-lista::-webkit-scrollbar{
-        display: none;
-    }
-
-    .produto{
-        display: inline-block;
-        width: 250px;
-        margin-right: 25px;
-        border-radius: 3px;
-        overflow:hidden;
-        transition: 0.5s;
-        overflow: auto;
-        border: 1px solid transparent;
-    }
-
-    .produto:hover{
-        cursor: pointer;
-        transform: scale(1.2);
-        z-index: 99;
-        transform: 0.5s;
-    }
-
-    .produto:hover .produto-info{
-        transform: scale(1);
-        transition: 0.5s;
-    }
-
-    .produto:first-child{
-        margin-left: 50px;
-    }
-
-    .produto-info{
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
-        position: relative;
-        width: 100%;
-        padding: 10px;
-        max-height:100px; 
-        transform: scale(0);
-    }
-
-    .produto-info .col-12{
-        margin-top: 5px;
-    }
-
-    .produto-info .col-12:first-child{
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    .produto-info p{
-        color: #fff;
-        font-size: 12px;
-    }
-
-    .imagem-carrosel{
-        height: 250px;
-        margin: 15px;
-    }
-    */
-
-
-    
-    /*TESTE CARROSSEL 1
-
-.produto-lista-teste{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-left: 50px;
-    list-style:none;
-    white-space: nowrap;
-    display: block;
-    border: 1px solid transparent;
-}
-
-.produto-lista-teste::-webkit-scrollbar{
-    display: none;
-}
-
-.produto-teste{
-    display:inline-block;
-    margin-right: 25px;
-    border-radius: 3px;
-    overflow:hidden;
-    transition: 0.5s;
-    overflow: auto;
-    border: 1px solid transparent;
-}
-
-
-.produto-teste:hover{
-    cursor: pointer;
-    transform: scale(1.15);
-    z-index: 99;
-    transform: 0.5s;
-}
-
-.produto-teste:hover .produto-mais{
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.produto-teste:first-child{
-    margin-left: 50px;
-}
-
-.produto-mais{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-    top: 200px;
-    position:relative;
-    padding-top: 5px;
-    padding-bottom: 3px;
-    width: 100%;
-    transform: scale(0);
-}
-
-.produto-info{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    max-height:100px; 
-    transform: scale(0);
-}
-
-.produto-mais .col-12:first-child{
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.produto-mais p{
-    color: #fff;
-    font-size: 18px;
-}*/
-
-/*CARROSSEL COM SETA*/
-
-.imagem-carrosel-rose{
-    background-image: url(img/rose.png);
-    background-repeat: no-repeat; 
-    background-size: cover;
-
-    height:260px;
-    width: 260px;
-}
-
-.imagem-carrosel-green{
-    background-image: url(img/Green.png);
-    background-repeat: no-repeat; 
-    height:260px; 
-    width: 260px;
-}
-
-.imagem-carrosel-yellow{
-    background-image: url(img/yellow.png);
-    background-repeat: no-repeat; 
-    height:260px;
-    width: 260px;
-   
-}
-
-.imagem-carrosel-blue{
-    background-image: url(img/blue.png);
-    background-repeat: no-repeat; 
-    height:260px; 
-    width: 260px;
-  
-}
-
-/*CARROSSEL 2*/
-.produto-lista-teste2{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-left: 50px;
-    list-style:none;
-    white-space: nowrap;
-    display: block;
-    border: 1px solid transparent;
-}
-
-.produto-lista-teste2::-webkit-scrollbar{
-    display: none;
-}
-
-.produto-teste2{
-    display:inline-block;
-    margin-right: 25px;
-    border-radius: 3px;
-    overflow:hidden;
-    transition: 0.5s;
-    overflow: auto;
-    border: 1px solid transparent;
-}
-
-.produto-teste2:hover{
-    cursor: pointer;
-    transform: scale(1.15);
-    z-index: 99;
-    transform: 0.5s;
-}
-
-.produto-teste2:hover .produto-mais2{
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.produto-teste2:first-child{
-    margin-left: 65px;
-}
-
-.produto-mais2{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-    top: 200px;
-    position:relative;
-    padding-top: 5px;
-    padding-bottom: 3px;
-    width: 100%;
-    transform: scale(0);
-}
-
-.produto-mais2 .col-12:first-child{
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.produto-mais2 p a{
-    color: #fff;
-    font-size: 18px;
-}
-
-
-/*CARROSSEL 4*/
-
-.produto-lista-teste3{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-left: 150px;
-    list-style:none;
-    white-space: nowrap;
-    display: block;
-    border: 1px solid transparent;
-}
-
-.produto-lista-teste3::-webkit-scrollbar{
-    display: none;
-}
-
-.produto-teste3{
-    display:inline-block;
-    margin-right: 25px;
-    border-radius: 3px;
-    overflow:hidden;
-    transition: 0.5s;
-    overflow: auto;
-    border: 1px solid transparent;
-}
-
-.produto-teste3:hover{
-    cursor: pointer;
-    transform: scale(1.15);
-    z-index: 99;
-    transform: 0.5s;
-}
-
-.produto-teste3:hover .produto-mais3{
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.produto-teste3:first-child{
-    margin-left: 65px;
-}
-
-.produto-mais3{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-    top: 220px;
-    position:relative;
-    padding-top: 5px;
-    padding-bottom: 3px;
-    width: 100%;
-    transform: scale(0);
-}
-
-.produto-mais3 .col-12:first-child{
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.produto-mais3 p a{
-    color: #fff;
-    font-size: 18px;
-}
-
-
-/*BOTÃO CARROSSEL*/
-.carousel-control-next{
-    top:75px;
-    height: 100px;
-    width: 80px;
-}
-
-.carousel-control-prev{
-    top:75px;
-    width: 80px;
-    height: 100px;
-}
-
-/*CARROSEL 2 (GRANDE)*/
-.imagem-carrosel-casal{
-    background-image: url(img/Casal\ 1.png);
-    
-    background-repeat: no-repeat; 
-    height:460px;
-    width: 447px;   
-}
-
-/*CARROSSEL 3*/
-.imagem-carrosel-casaco{
-    background-image: url(img/Loirinha\ safadinha.png);
-    background-repeat: no-repeat;
-    width: 297px;
-    height:283px;   
-}
-
-
-
